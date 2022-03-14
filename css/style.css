@@ -2838,3 +2838,6 @@ h4 img {
     width: 30px;
     margin-left: 6px;
 }
+.centered{
+    margin:0 auto;
+}
