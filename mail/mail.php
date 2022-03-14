@@ -22,7 +22,7 @@ echo "1: ".$recipient, "\r\n2: ".$subject, "\r\n3: ".$formcontent, "\r\n4: ".$ma
 // print_r($recipient, $subject, $formcontent, $mailheader);
 $success =  mail($recipient, $subject, $formcontent, $mailheader); 
 if ($success) {
-    header("Location:https://www.bbc.com"); //Redirect to url if form submitted
+    header("Location:https://gh-pages.d7vvbkfbjghwk.amplifyapp.com/#contact-form-section"); //Redirect to url if form submitted
 }
 echo "Thank You!";
 ?>
