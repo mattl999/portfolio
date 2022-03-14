@@ -304,8 +304,10 @@ a {
 .hero-img {
     max-width: 100%;
     height: 582px;
+    height: 582px;
     position: relative;
     z-index: 99;
+  
 }
 
 .hero-text {
@@ -1749,7 +1751,28 @@ Portfiloio Page CSS
     padding-left: 45px;
 }
 
+.technologies-section{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 30px;
+}
+.tech-col {
+    width:100%;
+    height: 100%;
+   margin-left: 20%;
+   
 
+}
+.tech-col li {
+    font-size: large;
+    margin-bottom: 20px;
+    font-weight:bold;
+    list-style-type: circle;
+}
+.tech-col li:last-child {
+    font-size: large;
+    margin-bottom: 0px;
+}
 .portfolio-bg {
     background: url("../img/portfolio-info-bg.jpg");
     background-size: cover;
@@ -2792,4 +2815,26 @@ span.reviewer-name-id {
 .footer-logo{
     margin-bottom: 5px;
     height:100px;
+}
+.port-header{
+    font-size: 22px;
+    font-weight: 500;
+    color: #212121;
+    transition: .3s all;
+}
+h4 img {
+    width:30px;
+}
+.mongo-logo {
+    width:40px;
+    margin-left: 6px;
+}
+.django-logo {
+    width: 27px;
+    height: 30px;
+    margin-left: 6px;
+}
+.react-logo {
+    width: 30px;
+    margin-left: 6px;
 }

@@ -21,8 +21,8 @@ $body .= "From: ".$message. "\r\n";
 echo "1: ".$recipient, "\r\n2: ".$subject, "\r\n3: ".$formcontent, "\r\n4: ".$mailheader;
 // print_r($recipient, $subject, $formcontent, $mailheader);
 $success =  mail($recipient, $subject, $formcontent, $mailheader); 
-if (!$success) {
-    $errorMessage = error_get_last()['message'];
+if ($success) {
+    header("Location:https://www.bbc.com"); //Redirect to url if form submitted
 }
 echo "Thank You!";
 ?>
