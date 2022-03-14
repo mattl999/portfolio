@@ -21,8 +21,29 @@ $body .= "From: ".$message. "\r\n";
 echo "1: ".$recipient, "\r\n2: ".$subject, "\r\n3: ".$formcontent, "\r\n4: ".$mailheader;
 // print_r($recipient, $subject, $formcontent, $mailheader);
 $success =  mail($recipient, $subject, $formcontent, $mailheader); 
-if ($success) {
-    header("Location:https://gh-pages.d7vvbkfbjghwk.amplifyapp.com"); //Redirect to url if form submitted
-}
-echo "Thank You!";
-?>
+
+if ($success){ ?>
+    <script language="javascript" type="text/javascript">
+      alert('Thank you for the message. We will contact you shortly.');
+      window.location = 'index.html';
+    </script>
+    <?php
+  }
+  else { ?>
+      <script language="javascript" type="text/javascript">
+        alert('Message failed. Please, send an email to gordon@template-help.com');
+        window.location = 'index.html';
+      </script>
+      <?php
+  }
+  header('Location: https://gh-pages.d7vvbkfbjghwk.amplifyapp.com/');
+  ?>
+
+
+
+
+// {
+    // header("Location:https://gh-pages.d7vvbkfbjghwk.amplifyapp.com"); //Redirect to url if form submitted
+// }
+// echo "Thank You!";
+// ?>
