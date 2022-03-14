@@ -36,7 +36,7 @@ if ($success){ ?>
       </script>
       <?php
   }
-  header('Location: https://gh-pages.d7vvbkfbjghwk.amplifyapp.com/');
+  header('Location: https://gh-pages.d7vvbkfbjghwk.amplifyapp.com/index.html');
   ?>
 
 
