@@ -511,7 +511,7 @@ html .scroll-down{
 .about-img{
     position: relative;
     margin-top: 5px;
-    background: url(../img/about-img.jpg);
+    background: url(../img/about-img.png);
     height: 508px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -525,7 +525,6 @@ html .scroll-down{
     height: 100%;
     left: 0;
     top: 0;
-    background: rgba(22, 22, 219, 0.4);
     margin-right: 5%;
 }   
 
@@ -933,7 +932,7 @@ button.active-work {
 }
 
 .portfolio-img-4 {
-    background: url("../img/thumb-4.png");
+    background: url("../img/thumb4.png");
 }
 
 .portfolio-img-5 {
