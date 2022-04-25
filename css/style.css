@@ -935,26 +935,7 @@ button.active-work {
     background: url("../img/thumb4.png");
     background-image: url("../img/thumb4.png");
 }
-
-.portfolio-img-5 {
-    background: url("../img/portfolio-5.jpg");
-}
-
-.portfolio-img-6 {
-    background: url("../img/portfolio-6.jpg");
-}
-
-.portfolio-img-7 {
-    background: url("../img/portfolio-7.jpg");
-}
-
-.portfolio-img-8 {
-    background: url("../img/portfolio-8.jpg");
-}
-
-.portfolio-img-9 {
-    background: url("../img/portfolio-9.jpg");
-}
+ 
 .portfolio-single {
     position: relative;
     background-size: cover;
@@ -1144,7 +1125,7 @@ span.price-catagory {
 }
 
 .testimonial-bg {
-    background: linear-gradient(to bottom, rgba(22, 22, 219, 0.8), rgba(22, 22, 219, 0.8)), url("../img/testimonial-bg.jpg");
+    /* background: linear-gradient(to bottom, rgba(22, 22, 219, 0.8), rgba(22, 22, 219, 0.8)), url("../img/testimonial-bg.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1387,7 +1368,7 @@ a.blog-title {
 }
 
 .contact-bg {
-    background: linear-gradient(to bottom, rgba(22, 22, 219, 0.8), rgba(22, 22, 219, 0.8)), url("../img/contact-bg.jpg");
+    /* background: linear-gradient(to bottom, rgba(22, 22, 219, 0.8), rgba(22, 22, 219, 0.8)), url("../img/contact-bg.jpg"); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1691,7 +1672,7 @@ Portfiloio Page CSS
 }
 
 .breadcrumbs-bg-portfolio {
-    background: url("../img/breadcrumbs-bg-portfolio.jpg");
+    /* background: url("../img/breadcrumbs-bg-portfolio.jpg"); */
     
 }
 
