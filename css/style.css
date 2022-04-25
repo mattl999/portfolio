@@ -2840,3 +2840,6 @@ h4 img {
 .centered{
     margin:0 auto;
 }
+.darkreader--sync{
+    background-color: none !important;
+}
