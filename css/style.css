@@ -933,7 +933,7 @@ button.active-work {
 
 .portfolio-img-4 {
     background: url("../img/thumb4.png");
-    background-image: none !important;
+    background-image: url("../img/thumb4.png");
 }
 
 .portfolio-img-5 {
