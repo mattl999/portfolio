@@ -2841,8 +2841,9 @@ h4 img {
     margin:0 auto;
 }
 .darkreader--sync{
-    background-color: none !important;
+    background-color: rgba(21, 21, 21, 0) !important;
+
 }
 .about-img::after{
-    background-color: none !important;
+    background-color: rgba(21, 21, 21, 0) !important;
 }
