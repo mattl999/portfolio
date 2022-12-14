@@ -42,7 +42,10 @@
 
 /* Google Web Fonts */
 @import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
-
+:root {
+    --theme:#021f63;
+  }
+  n-section
 /* CSS Start */
 html {
     -webkit-box-sizing: inherit;
@@ -114,20 +117,20 @@ a {
 }
 
 .blue-box {
-    border: 1px solid #1616db;
-    background: #1616db;
+    border: 1px solid var(--theme);
+    background: var(--theme);
     color: #fff;
     z-index: 1;
 }
 
 .blue-box:hover {
-    color: #1616db;
+    color: var(--theme);
 }
 
 .blue-box::after {
     position: absolute;
     content: "";
-    border: 1px solid #1616db;
+    border: 1px solid var(--theme);
     background-color: #fff;
     top: 0;
     right: 0;
@@ -156,7 +159,7 @@ a {
 .white-box::after {
     position: absolute;
     content: "";
-    background-color: #1616db;
+    background-color: var(--theme);
     bottom: 0;
     right: -1%;
     width: 0%;
@@ -169,14 +172,16 @@ a {
     width: 100%;
     left: 0;
     color: #fff;
-    border: 1px solid #1616db;
+    border: 1px solid var(--theme);
 }
 
 /*:::::::::::::::::::::::::::::::::::::::::: 
 2. Header Navigation Section
 ::::::::::::::::::::::::::::::::::::::::::*/
 #navigation-section {
-    background: #1616db;
+    background: var(--theme);
+    background:#021f63;
+    background:var(--theme);
     padding: 35px 0;
     font-family: 'Rubik', sans-serif;
     transition: .5s linear;
@@ -255,7 +260,7 @@ a {
 
 
 .slicknav_menu {
-    background: #1616db;
+    background: var(--theme);
 }
 .slicknav_menu .slicknav_menutxt {
     display: none;
@@ -272,7 +277,7 @@ a {
     position: absolute;
     width: 100%;
     height: auto;
-    background: #1616db;
+    background: var(--theme);
     z-index: 999;
     top: 54px;
     left: 0;
@@ -307,6 +312,7 @@ a {
     height: 582px;
     position: relative;
     z-index: 99;
+    /* border:2px solid green */
   
 }
 
@@ -329,13 +335,20 @@ a {
     font-weight: 600;
     line-height: 120px;
     position: relative;
-    padding: 5px 0;
+    padding: 5px 10px;
     z-index: 1;
-    color: #212121;
+    
     margin-left: -5px;
+    
+    background: #f6f6f6;
+    width: fit-content;
+    display: block;
+   
+   
+    
 }
 
-.hero-name::after {
+/* .hero-name::after {
     content: "";
     position: absolute;
     background: #f6f6f6;
@@ -344,7 +357,7 @@ a {
     left: -11%;
     top: 0;
     z-index: -1;
-}
+} */
 
 
 .hero-title {
@@ -363,7 +376,7 @@ a {
 
 
 .scroll-down {
-    border: 1px solid #1616db;
+    border: 1px solid var(--theme);
     width: 30px;
     height: 60px;
     border-radius: 30px;
@@ -378,7 +391,7 @@ a {
     content: "";
     width: 2px;
     height: 10px;
-    background: #1616db;
+    background: var(--theme);
     left: 50%;
     transform: translateX(-50%);
     animation: scroll-down-animate infinite 1s ease-in-out;
@@ -417,7 +430,7 @@ html .scroll-down{
     padding-bottom: 120px;
 }
 .title-area h6 {
-    color: #1616db;
+    color: var(--theme);
     font-size: 16px;
     font-weight: 500;
     margin-bottom: -5px;
@@ -493,7 +506,9 @@ html .scroll-down{
     color: #212121;
     margin-top: -8px;
 }
-
+.form-container{
+    background-color:darkgrey
+}
 .item-phone,
 .item-email {
     font-weight: 400;
@@ -511,11 +526,18 @@ html .scroll-down{
 .about-img{
     position: relative;
     margin-top: 5px;
-    background: url(../img/about-img.png);
-    height: 508px;
-    background-size: cover;
+    background: url(../img/about-img3.png);
+    height: 590px;
+    background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
+}
+@media screen and (max-width:1200px){
+.about-img{
+    background-size: auto;
+    /* height: !important; */
+
+};
 }
 
 .about-img::after{
@@ -593,7 +615,7 @@ html .scroll-down{
     transform: rotateY(180deg);
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    background: #1616db;
+    background: var(--theme);
     color: #fff !important;
     padding: 79px 47px;
 }
@@ -623,7 +645,7 @@ html .scroll-down{
 }
 
 .service-icon {
-    background: #1616db;
+    background: var(--theme);
     width: 100px;
     height: 100px;
     display: flex;
@@ -726,7 +748,7 @@ html .scroll-down{
     display: inline-block;
     visibility: visible;
     opacity: 1;
-    color: #1616db;
+    color: var(--theme);
 
 }
 
@@ -786,7 +808,7 @@ html .scroll-down{
 }
 
 .skill-div p {
-    color: #1616db;
+    color: var(--theme);
     margin-bottom: 0;
 }
 
@@ -802,7 +824,7 @@ html .scroll-down{
 }
 
 .skill-person-info {
-    background: #1616db;
+    background: var(--theme);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -828,7 +850,7 @@ html .scroll-down{
     margin-top: 15px;
 }
 .skill-social-link a {
-    color: #1616db;
+    color: var(--theme);
     background: #fff;
     width: 40px;
     height: 40px;
@@ -888,7 +910,7 @@ html .scroll-down{
 }
 
 .portfolio-menu button {
-    background: #1616db;
+    background: var(--theme);
     border: none;
     padding: 19px 35px;
     color: #fff;
@@ -920,20 +942,25 @@ button.active-work {
 }
 
 .portfolio-img-1 {
-    background: url("../img/thumb-1.png");
+    background: url("../img/thumbnails/t1.png");
 }
 
 .portfolio-img-2 {
-    background: url("../img/thumb-2.png");
+    background: url("../img/thumbnails/t2.png");
 }
 
 .portfolio-img-3 {
-    background: url("../img/thumb-3.png");
+    background: url("../img/thumbnails/t3.png");
 }
 
 .portfolio-img-4 {
-    background: url("../img/thumb4.png");
-    background-image: url("../img/thumb4.png");
+    background: url("../img/thumbnails/t4.png");
+}
+.portfolio-img-5 {
+    background: url("../img/thumbnails/t5.png");
+}
+.portfolio-img-6 {
+    background: url("../img/thumbnails/t7.png");
 }
  
 .portfolio-single {
@@ -980,6 +1007,11 @@ button.active-work {
     opacity: 0;
     transition: .5s linear;
 }
+.pt-mod {
+    width:fit-content;
+    padding-right: 15px;
+    padding-left: 15px;
+}
 
 .portfolio-text a h4 {
     font-size: 22px;
@@ -989,11 +1021,11 @@ button.active-work {
 }
 
 .portfolio-text a:hover h4{
-    color: #1616db;
+    color: var(--theme);
 }
 
 .portfolio-text span {
-    color: #1616db;
+    color: var(--theme);
 }
 
 .zoom {
@@ -1041,7 +1073,7 @@ button.active-work {
 }
 
 .price-head {
-    background: #1616db;
+    background: var(--theme);
 }
 
 span.price-catagory {
@@ -1051,7 +1083,7 @@ span.price-catagory {
     justify-content: center;
     align-items: center;
     background: #fff;
-    color: #1616db;
+    color: var(--theme);
     font-family: 'Rubik', sans-serif;
 }
 
@@ -1098,7 +1130,7 @@ span.price-catagory {
     position: absolute;
     width: 8px;
     height: 2px;
-    background: #1616db;
+    background: var(--theme);
     top: 50%;
     transform: translate(-225%, -50%)
 }
@@ -1148,7 +1180,7 @@ span.price-catagory {
 
 .quote-icon {
     position: relative;
-    background: #1616db;
+    background: var(--theme);
     width: 60px;
     height: 60px;
 }
@@ -1178,7 +1210,7 @@ span.price-catagory {
     font-family: 'Muli', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: #1616db;
+    color: var(--theme);
 }
 
 .reviewer-name span{
@@ -1211,7 +1243,7 @@ span.price-catagory {
 
 
 .designation {
-    color: #1616db;
+    color: var(--theme);
 }
 
 
@@ -1233,7 +1265,7 @@ span.price-catagory {
     position: absolute;
     width: 100%;
     height: 0px;
-    background: #1616db;
+    background: var(--theme);
     bottom: 0;
     left: 0;
     transition: .1s linear;
@@ -1262,7 +1294,7 @@ span.price-catagory {
 
 .blog-catagory {
     position: absolute;
-    background: #1616db;
+    background: var(--theme);
     color: #fff;
     text-align: center;
     top: 15px;
@@ -1273,7 +1305,7 @@ span.price-catagory {
 
 .single-blog:hover .blog-catagory {
     background: #fff;
-    color: #1616db
+    color: var(--theme)
 }
 
 
@@ -1356,7 +1388,7 @@ a.blog-title {
 }
 
 .single-blog:hover .blog-title{
-    color: #1616db;
+    color: var(--theme);
 }
 
 /*:::::::::::::::::::::::::::::::::::::::::: 
@@ -1401,7 +1433,7 @@ a.blog-title {
 }
 
 .contact-icon {
-    background: #1616db;
+    background: var(--theme);
     width: 90px;
     height: 90px;
     line-height: 90px;
@@ -1420,7 +1452,7 @@ a.blog-title {
     position: absolute;
     width: 30px;
     height: 2px;
-    background: #1616db;
+    background: var(--theme);
     top: -50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -1456,7 +1488,7 @@ textarea {
     content: " ";
     position: absolute;
     height: 2px;
-    background: #1616db;
+    background: var(--theme);
     right: 0;
     bottom: 30px;
     transition: .3s linear;
@@ -1501,12 +1533,12 @@ button.box-btn.blue-box {
 .footer-submit input {
     height: 50px;
     background: #f6f6f6;
-    border: 2px solid #1616db;
+    border: 2px solid var(--theme);
 }
 
 .footer-submit button {
     border: none;
-    background: #1616db;
+    background: var(--theme);
     color: #fff;
     margin-bottom: 6px;
     height: 50px;
@@ -1532,7 +1564,7 @@ header img.logo-mod{
     position: absolute;
     width: 100%;
     height: 2px;
-    background: #1616db;
+    background: var(--theme);
     left: 0;
     bottom: 0;
 }
@@ -1565,7 +1597,7 @@ header img.logo-mod{
     content: "";
     width: 10px;
     height: 2px;
-    background: #1616db;
+    background: var(--theme);
     left: 0;
     top: 50%;
     transform: translateY(-50%);
@@ -1601,7 +1633,7 @@ header img.logo-mod{
     /* top: 0%; */
     transform: translateY(6px);
     left: 0;
-    color: #1616db;
+    color: var(--theme);
 }
 
 .footer-contact {
@@ -1625,7 +1657,7 @@ header img.logo-mod{
 }
 
 .copy-right-text a {
-    color: #1616db;
+    color: var(--theme);
 }
 
 .copy-right-text::after {
@@ -1633,7 +1665,7 @@ header img.logo-mod{
     position: absolute;
     width: 100%;
     height: 1px;
-    background: #1616db;
+    background: var(--theme);
     left: 0;
     top: -25px;
 }
@@ -1715,7 +1747,7 @@ Portfiloio Page CSS
 }
 
 .breadcrumbs-navigation a {
-    color: #1616db;
+    color: var(--theme);
 }
 
 
@@ -1763,17 +1795,14 @@ Portfiloio Page CSS
     height: 700px;
 }
 .portfolio-bg-1 {
-  
-   
-    position: relative;
-  
     display: flex;
     flex-direction: column;
+    
     
 }
 .portfolio-bg-1 img {
     width:100.04%;
-    
+    height:fit-content;
 }
 
 
@@ -1829,7 +1858,7 @@ span.port-social-link a {
     display: inline-block;
     width: 25px;
     height: 25px;
-    background: #1616db;
+    background: var(--theme);
     color: #fff;
     text-align: center;
     line-height: 25px;
@@ -1845,7 +1874,7 @@ span.port-social-link a:last-child {
 }
 
 h5.portfolio-title {
-    color: #1616db;
+    color: var(--theme);
     margin-bottom: 20px;
     position: relative;
     font-family: 'Rubik', sans-serif;
@@ -1883,7 +1912,7 @@ h5.portfolio-title::after {
     top: 50%;
     left: -46px;
     transform: translateY(-50%);
-    background: #1616db;
+    background: var(--theme);
 }
 
 
@@ -1951,7 +1980,7 @@ h5.portfolio-title::after {
 }
 
 .feature-text h5 i {
-    background: #1616db;
+    background: var(--theme);
     width: 20px;
     height: 20px;
     padding: 5px;
@@ -1963,7 +1992,7 @@ h5.portfolio-title::after {
 
 .feature-text h5:hover i{
     background: #fff;
-    color: #1616db;
+    color: var(--theme);
     font-size: 10px;
 }
 
@@ -1974,7 +2003,7 @@ h5.portfolio-title::after {
     height: 100%;
     left: 0;
     top: 0;
-    background: #1616db;
+    background: var(--theme);
     transition: .3s linear;
     z-index: -1;
 }
@@ -2015,7 +2044,7 @@ h5.portfolio-title::after {
 .portfolio-service-icon {
     width: 105px;
     height: 105px;
-    background: #1616db;
+    background: var(--theme);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2029,7 +2058,7 @@ h5.portfolio-title::after {
 
 
 .single-portfolio-service-box:hover .portfolio-service-icon svg {
-    fill: #1616db;
+    fill: var(--theme);
 }
 
 
@@ -2058,7 +2087,7 @@ h5.portfolio-title::after {
 }
 
 .single-portfolio-service-box:hover {
-    background: #1616db;
+    background: var(--theme);
     color: #fff;
 }
 
@@ -2109,7 +2138,7 @@ h5.portfolio-title::after {
 
 .competator-inner-text {
     position: absolute;
-    background: #1616db;
+    background: var(--theme);
     color: #fff;
     bottom: 30px;
     padding: 7.5px 30px;
@@ -2162,7 +2191,7 @@ h5.portfolio-title::after {
 
 
 .post-nav {
-    background: #1616db;
+    background: var(--theme);
     width: 138px;
     height: 50px;
     position: relative;
@@ -2269,7 +2298,7 @@ Blog Page CSS
     right: 0;
     top: 30px;
     padding: 19px 45px;
-    background: #1616db
+    background: var(--theme)
 }
 
 .author-post img {
@@ -2284,7 +2313,7 @@ Blog Page CSS
 }
 
 .author-post span a {
-    color: #1616db;
+    color: var(--theme);
     font-weight: 500;
 }
 
@@ -2367,7 +2396,7 @@ Blog Page CSS
     position: absolute;
     width: 65px;
     height: 2px;
-    background: #1616db;
+    background: var(--theme);
     left: 0;
     top: 8px;
 }
@@ -2403,14 +2432,14 @@ span.reviewer-name-id {
     position: absolute;
     width: 5px;
     height: 2px;
-    background: #1616db;
+    background: var(--theme);
     left: 0;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .quote-comma {
-    background: #1616db;
+    background: var(--theme);
     width: 95px;
     height: 95px;
     display: inline-flex;
@@ -2426,7 +2455,7 @@ span.reviewer-name-id {
     position: absolute;
     width: 5px;
     height: 240px;
-    background: #1616db;
+    background: var(--theme);
     right: 0;
     top: 50%;
     transform: translateY(-50%);
@@ -2460,7 +2489,7 @@ span.reviewer-name-id {
     transform: translate(-50%, -50%);
     font-size: 28px;
     color: #fff;
-    background: #1616db;
+    background: var(--theme);
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -2476,7 +2505,7 @@ span.reviewer-name-id {
 .click-video::before {
     position: absolute;
     content: "";
-    background: #1616db;
+    background: var(--theme);
     top: 50%;
     left: 50%;
     border-radius: 50%;
@@ -2488,7 +2517,7 @@ span.reviewer-name-id {
 .click-video::after {
     position: absolute;
     content: "";
-    background: #1616db;
+    background: var(--theme);
     top: 50%;
     left: 50%;
     border-radius: 50%;
@@ -2543,7 +2572,7 @@ span.reviewer-name-id {
 }
 
 .mini-blog-title ul li img {
-    background: #1616db;
+    background: var(--theme);
     padding: 5px;
     margin-right: 13px;
 }
@@ -2570,11 +2599,11 @@ span.reviewer-name-id {
 .blog-tag-catagory a {
     font-weight: 400;
     font-family: 'Muli', sans-serif;
-    color: #1616db;
+    color: var(--theme);
 }
 
 .blog-share-link a {
-    background: #1616db;
+    background: var(--theme);
     color: #fff;
     width: 25px;
     height: 25px;
@@ -2619,7 +2648,7 @@ span.reviewer-name-id {
     position: absolute;
     width: 30px;
     height: 2px;
-    background: #1616db;
+    background: var(--theme);
     bottom: 15px;
     margin-left: 30px;
 }
@@ -2630,7 +2659,7 @@ span.reviewer-name-id {
     top: 15px;
     right: 0;
     padding: 10px 30px;
-    background: #1616db;
+    background: var(--theme);
     color: #fff;
     font-weight: 500;
 }
@@ -2687,7 +2716,7 @@ span.reviewer-name-id {
     position: absolute;
     width: 3px;
     height: 30px;
-    background: #1616db;
+    background: var(--theme);
     top: 50%;
     left: 0;
     transform: translateY(-50%);
@@ -2740,7 +2769,7 @@ span.reviewer-name-id {
     position: relative;
     width: 98.5%;
     height: 1px;
-    background: #1616db;
+    background: var(--theme);
     margin-left: 15px;
 }
 

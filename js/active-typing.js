@@ -1,11 +1,14 @@
     /*----------------------------
    Typing Animation active
     ------------------------------ */
+
+
     var typed = new Typed('.changeTitle', {
-        strings: [" Full Stack Web Developer.", "React Enthusiast.", "Avid Gamer.","Software Engineer." ],
-        typeSpeed: 90,
+        strings: ["Full Stack Web Developer.", "React Enthusiast.", "Avid Gamer.","Software Engineer.", "Problem Solver. ^1500"
+         ],
         loop: true,
         fadeOut: false,
-        backSpeed: 40,
-              typeSpeed: 60
+        backSpeed: 30,
+        typeSpeed: 42,
+        
       });

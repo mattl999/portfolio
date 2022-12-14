@@ -23,7 +23,7 @@
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
     cursor: hand;
     border-radius: 50%;
-    background: #1616db;
+    background: #021f63;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-transition: all 0.3s cubic-bezier(0.25, 0.25, 0, 1);
     -ms-transition: all 0.3s cubic-bezier(0.25, 0.25, 0, 1);
@@ -33,7 +33,7 @@
 }
 
 .material-scrolltop:hover {
-    background-color: #1616db;
+    background-color: #021f63;
     text-decoration: none;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5), 0 3px 15px rgba(0, 0, 0, 0.5);
     outline: none;
@@ -52,7 +52,7 @@
     content: "";
     width: 0;
     border-radius: 100%;
-    background: #1616db;
+    background: #021f63
 }
 
 .material-scrolltop:active::before {
